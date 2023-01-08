@@ -7,13 +7,13 @@
 A server that can compute mandelbrot using multiple cores and shows the result 
 
 
-# Documentation de l'API de votre serveur
+<p align=left> <strong>Documentation de l'API de votre serveur</strong>  </p>
 
-
-## Stratégie de répartition du load balancer 
+<p align=left> <strong>Stratégie de répartition du load balancer</strong>  </p>
+ 
     
+<p align=left> <strong>Bibliothèques utilisés</strong>  </p>
 
-## Bibliothèques utilisés
     "fmt" : bibliothèque des fonctions analogues à printf et scanf du C
     "image" : bibliothèque d'images 2-D de base.
     "image/color" : bibliothèque de base en couleur
