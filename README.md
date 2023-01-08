@@ -8,6 +8,10 @@ A server that can compute mandelbrot using multiple cores and shows the result
 
 
 <p align=left> <strong>Documentation de l'API de votre serveur</strong>  </p>
+    Les clients et les serveurs échangent des données au moyen du protocole HTTP.
+    Les fonctions GET  et POST sont utilisées pour accéder aux données du serveur.
+    La fonction form utilise la méthode GET.
+    La fonction mandelbrot utilise la méthode POST.
 
 <p align=left> <strong>Stratégie de répartition du load balancer</strong>  </p>
  
