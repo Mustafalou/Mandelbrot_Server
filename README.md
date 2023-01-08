@@ -18,11 +18,18 @@ A server that can compute mandelbrot using multiple cores and shows the result
     
 <p align=left> <strong>Bibliothèques utilisés</strong>  </p>
 
-<p>net/http : Fournit un ensemble de fonctions et de types pour construire des serveurs et des clients HTTP.</p>
-<p>net/http/httputil : Fournit des fonctions utilitaires pour les serveurs et les clients HTTP, y compris des fonctions pour les requêtes par procuration.</p>
-<p>net/url : Fournit des fonctions pour analyser et manipuler les URLs.</p>
+
+<p>fmt : Fournit un ensemble de fonctions pour les E/S formatées avec des chaînes de caractères.</p>
 <p>image : Fournit un ensemble de types et de fonctions pour travailler avec des images.</p>
 <p>image/color : Fournit des types et des fonctions pour représenter et manipuler les couleurs dans les images.</p>
 <p>image/png : Fournit des fonctions pour coder et décoder les images PNG.</p>
 <p>math/cmplx : Fournit des fonctions permettant de travailler avec des nombres complexes.</p>
+<p>net/http : Fournit un ensemble de fonctions et de types pour construire des serveurs et des clients HTTP.</p>
+<p>net/http/httputil : Fournit des fonctions utilitaires pour les serveurs et clients HTTP, y compris des fonctions pour les requêtes par procuration.</p>
+<p>net/url : Fournit des fonctions pour analyser et manipuler les URLs.</p>
+<p>os : Fournit une interface indépendante de la plate-forme pour les fonctionnalités du système d'exploitation.</p>
+<p>runtime : Fournit des fonctions pour interagir avec le runtime Go.</p>
+<p>strconv : Fournit des fonctions pour convertir des chaînes de caractères vers et depuis d'autres types de données.</p>
 <p>sync : Fournit des types avec lesquels vous pouvez construire une synchronisation de plus haut niveau.</p>
+
+
