@@ -9,8 +9,8 @@
 
 <p align=left> <strong>Documentation de l'API du serveur</strong>  </p>
 
-    <p>Les clients et les serveurs échangent des données au moyen du protocole HTTP.</p>
-    <p>Les fonctions GET et POST sont utilisées pour accéder aux données du serveur.</p>
+<p>Les clients et les serveurs échangent des données au moyen du protocole HTTP.</p>
+<p>Les fonctions GET et POST sont utilisées pour accéder aux données du serveur.</p>
 <p>GET / : Sert un formulaire qui permet aux utilisateurs de spécifier les paramètres de l'image de l'ensemble de Mandelbrot qu'ils veulent générer.</p>
 <p>POST /mandelbrot : Génère et sert une image d'ensemble Mandelbrot en réponse à la demande. Les données du formulaire dans le corps de la requête doivent inclure les paramètres suivants: </p>
 <p>realMin: The minimum value for the real component of the complex number being plotted.<br>
