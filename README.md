@@ -24,7 +24,8 @@ height: La hauteur de l'image générée, en pixels.<br>
 
 <p align=left> <strong>Stratégie de répartition du load balancer</strong>  </p>
  
- <p>Lorsqu'une demande est reçue, l'équilibreur de charge sélectionne le serveur suivant dans la liste et lui transmet la demande. Si le serveur sélectionné n'est pas disponible ou s'il n'y a plus de serveurs dans la liste, l'équilibreur de charge renvoie une erreur au client.</p>
+ <p>Le load balancer de notre serveur HTTP utilise l'algorithme round-robin pour distribuer les demandes entrantes à un ensemble de serveurs/workers. <br>
+ Lorsqu'une demande est reçue, l'équilibreur de charge sélectionne le serveur suivant dans la liste et lui transmet la demande. Si le serveur sélectionné n'est pas disponible ou s'il n'y a plus de serveurs dans la liste, l'équilibreur de charge renvoie une erreur au client.</p>
     
 <p align=left> <strong>Bibliothèques utilisés</strong>  </p>
 
