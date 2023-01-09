@@ -18,7 +18,7 @@ realMax: La valeur maximale de la composante réelle du nombre complexe en cours
 imagMin: La valeur minimale de la composante imaginaire du nombre complexe à tracer.<br>
 imagMax: La valeur maximale de la composante imaginaire du nombre complexe à tracer.<br>
 iterations: Le nombre d'itérations à utiliser lors du calcul de l'ensemble de Mandelbrot.<br>
-width: Le nombre d'itérations à utiliser lors du calcul de l'ensemble de Mandelbrot.<br>
+width: La largeur de l'image générée, en pixels.<br>
 height: La hauteur de l'image générée, en pixels.<br>
 </p>
 
