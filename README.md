@@ -14,12 +14,12 @@
 <p>GET / : Sert un formulaire qui permet aux utilisateurs de spécifier les paramètres de l'image de l'ensemble de Mandelbrot qu'ils veulent générer.</p>
 <p>POST /mandelbrot : Génère et sert une image d'ensemble Mandelbrot en réponse à la demande. Les paramètres suivants doivent être inclus dans la charge utile: </p>
 <p>realMin: The minimum value for the real component of the complex number being plotted.<br>
-realMax: The maximum value for the real component of the complex number being plotted.<br>
-imagMin: The minimum value for the imaginary component of the complex number being plotted.<br>
-imagMax: The maximum value for the imaginary component of the complex number being plotted.<br>
-iterations: The number of iterations to use when calculating the Mandelbrot set.<br>
-width: The width of the generated image, in pixels.<br>
-height: The height of the generated image, in pixels.<br>
+realMax: La valeur maximale de la composante réelle du nombre complexe en cours de tracé.<br>
+imagMin: La valeur minimale de la composante imaginaire du nombre complexe à tracer.<br>
+imagMax: La valeur maximale de la composante imaginaire du nombre complexe à tracer.<br>
+iterations: Le nombre d'itérations à utiliser lors du calcul de l'ensemble de Mandelbrot.<br>
+width: Le nombre d'itérations à utiliser lors du calcul de l'ensemble de Mandelbrot.<br>
+height: La hauteur de l'image générée, en pixels.<br>
 </p>
 
 <p align=left> <strong>Stratégie de répartition du load balancer</strong>  </p>
