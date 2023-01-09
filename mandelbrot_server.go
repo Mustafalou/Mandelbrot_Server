@@ -16,31 +16,26 @@ import (
 )
 
 func main() {
-	servers := []Server{
-		newSimpleServer("http://localhost:8081"),
-		newSimpleServer("http://localhost:8082"),
-		newSimpleServer("http://localhost:8083"),
+	servers := []Server{}
+	numServers := runtime.NumCPU()
+	if numServers > 5 {
+		numServers = 5 // Maximum of 5 servers
 	}
-
+	for i := 0; i < numServers; i++ {
+		url := fmt.Sprintf("http://localhost:%d", 8081+i)
+		servers = append(servers, newSimpleServer(url))
+		go startServer(i+1, 8081+i)
+	}
 	lb := NewLoadBalancer("80", servers)
 	handleRedirect := func(rw http.ResponseWriter, req *http.Request) {
 		lb.serveProxy(rw, req)
 	}
-
+	fmt.Printf("serving requests at 'localhost:%s'\n", lb.port)
 	// register a proxy handler to handle all requests
 	http.HandleFunc("/", handleRedirect)
-
-	fmt.Printf("serving requests at 'localhost:%s'\n", lb.port)
-	numServers := runtime.NumCPU()
-	if numServers > 3 {
-		numServers = 3 // Maximum of 3 servers
-	}
-	for i := 0; i < numServers; i++ {
-		go startServer(i+1, 8081+i)
-	}
 	http.ListenAndServe(":"+lb.port, nil)
 }
-func startServer(id, port int) {
+func startServer(id, port int) { //worker
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", formhandler)
 	mux.HandleFunc("/mandelbrot", handler)
