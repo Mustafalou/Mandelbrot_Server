@@ -13,7 +13,7 @@
 <p>Les fonctions GET et POST sont utilisées pour accéder aux données du serveur.</p>
 <p>GET / : Sert un formulaire qui permet aux utilisateurs de spécifier les paramètres de l'image de l'ensemble de Mandelbrot qu'ils veulent générer.</p>
 <p>POST /mandelbrot : Génère et sert une image d'ensemble Mandelbrot en réponse à la demande. Les paramètres suivants doivent être inclus dans la charge utile: </p>
-<p>realMin: The minimum value for the real component of the complex number being plotted.<br>
+<p>realMin: La valeur minimale de la composante réelle du nombre complexe en cours de tracé.<br>
 realMax: La valeur maximale de la composante réelle du nombre complexe en cours de tracé.<br>
 imagMin: La valeur minimale de la composante imaginaire du nombre complexe à tracer.<br>
 imagMax: La valeur maximale de la composante imaginaire du nombre complexe à tracer.<br>
