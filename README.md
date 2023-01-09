@@ -4,14 +4,16 @@
 <p align=right> 17292-18316 </p>
 
 <p align=center> <strong>Mandelbrot_Server </strong>  </p>
-A server that can compute mandelbrot using multiple cores and shows the result 
 
 
-<p align=left> <strong>Documentation de l'API de votre serveur</strong>  </p>
+
+<p align=left> <strong>Documentation de l'API du serveur</strong>  </p>
     Les clients et les serveurs échangent des données au moyen du protocole HTTP.
-    Les fonctions GET  et POST sont utilisées pour accéder aux données du serveur.
-    La fonction form utilise la méthode GET.
-    La fonction mandelbrot utilise la méthode POST.
+    Les fonctions GET et POST sont utilisées pour accéder aux données du serveur.
+
+<p>GET / : Sert un formulaire qui permet aux utilisateurs de spécifier les paramètres de l'image de l'ensemble de Mandelbrot qu'ils veulent générer.</p>
+
+<p>POST /mandelbrot : Génère et sert une image d'ensemble Mandelbrot en réponse à la demande. Les données du formulaire dans le corps de la requête doivent inclure les paramètres suivants </p>
 
 <p align=left> <strong>Stratégie de répartition du load balancer</strong>  </p>
  Lorsqu'une demande est reçue, l'équilibreur de charge sélectionne le serveur suivant dans la liste et lui transmet la demande. Si le serveur sélectionné n'est pas disponible ou s'il n'y a plus de serveurs dans la liste, l'équilibreur de charge renvoie une erreur au client.
