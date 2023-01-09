@@ -35,7 +35,7 @@ func main() {
 	http.HandleFunc("/", handleRedirect)
 	http.ListenAndServe(":"+lb.port, nil)
 }
-func startServer(id, port int) { //worker
+func startServer(id, port int) { // worker en gros les serveurs
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", formhandler)
 	mux.HandleFunc("/mandelbrot", handler)
@@ -88,7 +88,7 @@ func computeMandelbrotColor(z complex128, iterations int) color.Color {
 	for n := uint8(0); n < uint8(iterations); n++ {
 		v = v*v + z
 		if cmplx.Abs(v) > 2 { //appartient pas
-			return color.Gray{255 - contrast*n}
+			return color.Gray{255 - contrast*n} ///color.RGBA{0, n, 0, 255}
 		}
 	}
 	return color.Black //appartient vrai
